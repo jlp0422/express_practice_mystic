@@ -1,0 +1,11 @@
+{% extends './layout.html' %}
+
+{% block content %}
+<ul class="list-group">
+  {% for friend in friends %}
+    <li class="list-group-item">
+      <a href="/friends/{{friend.id}}">{{friend.firstName}}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}

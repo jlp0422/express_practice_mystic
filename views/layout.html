@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/vendor/bootstrap/dist/css/bootstrap.css" />
+  <!-- <script src="main.js"></script> -->
+</head>
+<body>
+  <div class="container">
+    <h1 style="margin-top:10px;">{{title}}</h1>
+    <ul class="nav nav-pills" style="margin-bottom:15px;">
+      <li class="nav-item">
+        <a class="nav-link {%if path==='/'%}active{%endif%}" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {%if path==='/friends'%}active{%endif%}" href="/friends">Friends</a>
+      </li>
+    </ul>
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>

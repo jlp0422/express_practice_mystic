@@ -1,0 +1,9 @@
+{% extends './layout.html' %}
+
+{% block content %}
+<h3>This is a page for {{friend.firstName}}</h3>
+<h5>Favorite food: {{friend.food}}</h5>
+<h5>Defining accessory: {{friend.accessory}}</h5>
+<br>
+<a href="/friends">Back to all friends</a>
+{% endblock %}
