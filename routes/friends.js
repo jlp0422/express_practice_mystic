@@ -1,8 +1,7 @@
 /* eslint-disable */
 
-const app = require('express').Router()
+const app = require('express').Router();
 const db = require('../db');
-
 
 module.exports = app
 

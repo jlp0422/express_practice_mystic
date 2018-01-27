@@ -18,13 +18,12 @@ app.use((req, res, next) => {
   next();
 })
 
-app.use('/friends', require('./routes/friends'))
+app.use('/friends', require('./routes/friends'));
+app.use('/places', require('./routes/places'))
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`)
 });
-
-
 
 app.get('/', (req, res, next) => {
   res.render('index', {title: 'Home'})
