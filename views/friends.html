@@ -4,8 +4,10 @@
 <ul class="list-group">
   {% for friend in friends %}
     <li class="list-group-item">
-      <a href="/friends/{{friend.id}}">{{friend.firstName}}</a>
+      <a href="/friends/{{friend.firstName}}">{{friend.firstName}}</a>
+      <!-- <a href="/friends/{{friend.id}}">{{friend.firstName}}</a> -->
     </li>
   {% endfor %}
 </ul>
+<br><br>
 {% endblock %}
